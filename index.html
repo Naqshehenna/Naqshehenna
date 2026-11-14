@@ -4,8 +4,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NaqsheHenna by Eshal</title>
+<title>Naqsh-e-Henna by Eshal</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Georgia, serif;
@@ -13,41 +18,95 @@ body {
   color: #60232e;
   text-align: center;
 }
+
 header {
   padding: 55px 15px;
   background: #60232e;
   color: #fff5e9;
 }
-h1 { font-size: 38px; margin: 10px; }
-header p { letter-spacing: 2px; }
-section { padding: 30px 15px; }
-h2 { color: #873b48; }
+
+h1 {
+  font-size: 38px;
+}
+
+section {
+  padding: 40px 15px;
+}
+
+h2 {
+  color: #873b48;
+}
+
 .services {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
 }
+
 .services span {
   background: #f0dfd2;
   padding: 15px 22px;
   border-radius: 20px;
 }
-button {
+
+.gallery {
+  background: #fff0e6;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+  justify-content: center;
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.gallery-card {
+  background: #ead0c1;
+  padding: 15px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-card h3 {
+  color: #60232e;
+}
+
+.booking a {
+  display: inline-block;
   background: #60232e;
   color: white;
-  border: none;
-  padding: 15px 28px;
+  padding: 15px 25px;
   border-radius: 25px;
-  font-size: 16px;
+  text-decoration: none;
 }
+
 footer {
   background: #60232e;
   color: white;
   padding: 25px;
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -73,47 +132,46 @@ footer {
   <p>All Time Services Available</p>
   <p>Make your special moments more beautiful with henna.</p>
 </section>
-<section>
+
+<section class="booking">
   <h2>Book Your Appointment ♡</h2>
   <p>Arabic • Bridal • Custom • Simple Mehndi</p>
   <p>All Time Services Available</p>
   <p>Beautiful Designs at Affordable Prices</p>
   <p>WhatsApp: 03003125353</p>
-  <a href="https://wa.me/923003125353?text=Hello%2C%20I%20want%20to%20book%20a%20mehndi%20appointment."
-     style="display:inline-block;background:#60232e;color:white;padding:15px 25px;border-radius:25px;text-decoration:none;">
-     Book on WhatsApp ♡
+
+  <a href="https://wa.me/923003125353">
+    Book on WhatsApp ♡
   </a>
 </section>
-</body>
-  <section id="gallery" style="padding:40px 20px; text-align:center; background:#fff0e6;">
-  <h2 style="color:#650d20;">Our Mehndi Gallery</h2>
+
+<section class="gallery" id="gallery">
+  <h2>Our Mehndi Gallery</h2>
   <p>Beautiful Mehndi Inspiration Designs</p>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+  <div class="gallery-grid">
 
-    <div style="background:#ead0c1; padding:30px; border-radius:15px;">
-      <h3>Bridal Mehndi</h3>
-      <p>Elegant bridal inspiration</p>
+    <div class="gallery-card">
+      <img src="dubai Design ❤️.jpeg"
+           alt="Dubai Mehndi Design">
+      <h3>Dubai Mehndi</h3>
+      <p>Beautiful and elegant design</p>
     </div>
 
-    <div style="background:#ead0c1; padding:30px; border-radius:15px;">
+    <div class="gallery-card">
+      <img src="Dark-stain Arabic henna😍 ❤️.jpeg"
+           alt="Arabic Mehndi Design">
       <h3>Arabic Mehndi</h3>
-      <p>Beautiful Arabic inspiration</p>
-    </div>
-
-    <div style="background:#ead0c1; padding:30px; border-radius:15px;">
-      <h3>Simple Mehndi</h3>
-      <p>Simple and elegant designs</p>
-    </div>
-
-    <div style="background:#ead0c1; padding:30px; border-radius:15px;">
-      <h3>Floral Mehndi</h3>
-      <p>Pretty floral inspiration</p>
+      <p>Elegant Arabic henna inspiration</p>
     </div>
 
   </div>
 </section>
+
+<footer>
+  <p>Naqsh-e-Henna by Eshal ♡</p>
+  <p>Thank you for visiting!</p>
+</footer>
+
 </body>
 </html>
-
-
